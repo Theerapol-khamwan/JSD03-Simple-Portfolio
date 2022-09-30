@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+}
+
+body{
+    background-color: rgb(32, 32,35);
+}
+
+header{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    background: #20202380;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav {
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > .header-logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    animation: chcolo 6s infinite;
+}
+@keyframes chcolo {
+    from {color: rgb(255, 224, 169);}
+    to {color: rgb(253, 187, 73);}
+}
+
+.rotate-emoji{
+    font-size: 20px;
+    transition: 200ms ease;
+}
+.rotate-emoji:hover {
+    transform: rotate(-50deg);
+}
+
+.navbar > a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(253, 187, 73);
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    width: 700px;
+    height: 1000px;
+    left: 47%;
+    top: 106px;
+    margin-left: -300px
+}
+
+.container > .box01 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 7px;
+    width: 677px;
+    height:20px;
+
+    background: linear-gradient(#3b3b3b80 0 0) 0/0% no-repeat  rgb(138, 137, 137);
+    animation: p1 10s infinite linear;
+}
+
+@keyframes p1 {100% {background-size:100%}}
+
+
+.into {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+#naem-full > h4 {
+    font-size: 36px;
+    letter-spacing: 8px;
+}
+
+#naem-full > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.into-imge > img {
+    width: 96px;
+    height: 96px;
+    border-radius: 20%;
+    border: 2px solid whitesmoke;
+}
+
+.work {
+    margin-top: 25px;
+}
+
+.work > p {
+    margin-top: 10px;
+}
+
+.btn-mypo {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-mypo > button {
+    width: 147px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(251, 211, 141);
+    border-radius: 6px;
+}
+
+.btn-mypo > button:hover {
+    color: aliceblue;
+    background-color: rgb(253, 187, 73);
+}
+
+.bio{
+    margin-top: 25px;
+}
+
+.set-li > li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+li > span {
+    margin-left: 25px;
+}
+
+.ilove {
+    margin-top: 25px;
+}
+
+.ilove > .ilove-p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.ilove-p > span {
+    color: pink;
+    font-weight: bold;
+}
+
+.linkweb {
+    margin-top: 25px;
+}
+
+.ul-linkweb > li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+li > .li-linkweb {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+li > .li-linkweb:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    box-shadow: 6px 6px rgb(253, 187, 73);
+}
+
+a > .a-linkweb {
+    margin-left: 25px;
+}
+
+footer > .cr {
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(102, 102, 102);
+}
+
+@media only screen and (max-width: 600px) {
+
+    header{
+        width: 100%;
+    }
+
+    .logo > .header-logo{
+        font-size: 15px;
+        margin: 0 6px;
+    }
+
+    .logo > .rotate-emoji{
+        font-size: 15px;
+    }
+
+    .container{
+        width: 377px;
+        left: 47%;
+        top: 72px;
+        margin-left: -175px;
+    }
+
+    .container> .box01{
+        width: 356px;
+    }
+
+    .navbar > a {
+        margin: 0px 5px;
+        font-size: 12px;
+    }
+    
+}
